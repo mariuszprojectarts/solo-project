@@ -1,5 +1,152 @@
-.main {
-    width: 90%;
-    height: 100%;
-    background-color: $grey-tab-color;
+main {
+    width: calc(100% - 230px);
+    margin: 20px;
+    margin-left: 210px;
+    margin-top: 70px;
+    height: 1200px;
+}
+
+main section {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+main h3 {
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(144, 141, 137);
+    padding: 20px 0 0 20px
+}
+
+.btn-orange {
+    background-color: orange;
+    color: white;
+    border: transparent;
+    height: 30px;
+    width: auto;
+}
+
+//HEADER
+
+header {
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.administration-panel {
+    position: relative;
+    width: 100%;
+    margin-left: 60%;
+}
+
+.administration-panel div {
+    float: left;
+    display: flex;
+    align-items: center;
+    margin: 8px 20px 0 20px;
+}
+
+.administration-panel i {
+    font-size: 30px;
+}
+
+.administration-panel .icon-arrow-down {
+    font-size: 15px;
+}
+
+
+.administration-panel a {
+    margin-left: 10px;
+}
+
+//GENERAL STATISTIC
+
+.main-general {
+    height: 1100px;
+}
+
+
+.dates {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 200px;
+}
+
+.statistic-table {
+    justify-content: center;
+    margin: auto;
+    max-width: 400px;
+    height: 200px;
+}
+
+.statistic-field {
+    justify-content: center;
+    float: left;
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+.statistic-field p2 {
+    margin-left: 50px;
+}
+
+.chart {
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto 30px auto;
+    padding: 0;
+}
+
+// #myChart {
+//     display: flex;
+//     justify-content: center;
+// }
+
+//LINKS
+
+.main-links h3 {
+    text-decoration: none;
+}
+
+
+.position-link-list {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 400px;
+}
+
+.position-link-list div {
+    flex-direction: column;
+}
+
+.links-button {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+.links-title p {
+    margin: 0;
+    width: 10em;
+    line-height: 2.5;
+}
+
+.links-icons {
+    opacity: 0;
+}
+
+.links-icons:hover {
+    opacity: 1;
 }

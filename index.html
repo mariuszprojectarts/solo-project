@@ -12,183 +12,229 @@
     <nav class="navigation">
         <div class="heading">
             <h1>Just do it!</h1>
-            <i class="fas fa-bars hamburger-icon"></i>
+            <button class="fas fa-bars hamburger-icon"></button>
         </div>
         <ul class="list">
             <li>
-                <img class="menu-icon" src="images/icons/general.svg" alt="general_image">
+                <i class="icon-general"></i>
                 <a href="#">Generals</a>
             </li>
             <li>
-                <img class="menu-icon" src="images/icons/details.svg" alt="details_image">
+                <i class="icon-details"></i>
                 <a href="#">Details</a>
             </li>
             <li>
-                <img class="menu-icon" src="images/icons/links.svg" alt="links_image">
+                <i class="icon-links"></i>
                 <a href="#">Links</a>
             </li>
             <li>
-                <img class="menu-icon" src="images/icons/banners.svg" alt="links_image">
+                <i class="icon-banners"></i>
                 <a href="#">Banners</a>
             </li>
             <li>
-                <img class="menu-icon" src="images/icons/personaldata.svg" alt="links_image">
+                <i class="icon-personaldata"></i>
                 <a href="#">Personal data</a>
             </li>
             <li>
-                <img class="menu-icon" src="images/icons/payout.svg" alt="links_image">
+                <i class="icon-payout"></i>
                 <a href="#">Payout</a>
             </li>
             <li>
-                <img class="menu-icon" src="images/icons/postback.svg" alt="links_image">
+                <i class="icon-postback"></i>
                 <a href="#">Postback</a>
             </li>
         </ul>
         <div class="contacts">
             <h2>Your menager</h2>
-            <div>
-                <img>
+            <div class="people">
+                <img src="https://institutdelors.eu/wp-content/uploads/2020/08/fredericmenager-3.jpg" alt="menagier">
                 <p>Name</p>
                 <div class="online"></div>
             </div>
         </div>
     </nav>
 
-    <main>
-
-        <header class="row">
-            <div class="empty-div"></div>
-            <div class="administration-panel">
-                <div class="wallet">
-                    <img class="header-icon" src="images/icons/wallet.svg" alt="header_image">
-                    <a href="#">$1,500.00</a>
-                </div>
-                <div class="ring">
-                    <img class="header-icon" src="images/icons/notification.svg" alt="header_image">
-                    <a href="#"></a>
-                </div>
-                <div class="account">
-                    <img class="header-icon" src="images/icons/profile.svg" alt="header_image">
-                    <a href="#">Leonardo Dicaprio</a>
-                </div>
-                <div class="logout">
-                    <img class="header-icon" src="images/icons/quit.svg" alt="header_image">
-                    <a href="#"></a>
-                </div>
+    <header>
+        <div class="administration-panel">
+            <div class="header icon">
+                <i class="icon-wallet"></i>
+                <a href="#">$1,500.00</a>
+                <i class="icon-arrow-down"></i>
             </div>
-
-        </header>
-
-        <section class="main general">
+            <div class="ring">
+                <i class="icon-message"></i>
+                <a href="#"></a>
+            </div>
+            <div class="account">
+                <i class="icon-profile"></i>
+                <a href="#">Leonardo Dicaprio</a>
+            </div>
+            <div class="logout">
+                <i class="icon-quit"></i>
+                <a href="#"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="main-general">
             <h3>GENERAL STATISTIC</h3>
             <div class="dates">
                 <div class="date">
-                    <input type="date" placeholder="16-10-2020">
+                    <input type="date" placeholder="16.10.2020">
                 </div>
                 <div class="date">
-                    <input type="date" placeholder="16-09-2020">
-                    <img class="menu-icon" src="images/icons/calendar.svg" alt="image">
+                    <input type="date" placeholder="16.09.2020">
+                    <i class="icon-calendar"></i>
                 </div>
-                <button>
-                    <a href="#" class="btn-orange button-refresh"><img class="button-icon" src="images/icons/refresh.svg">
+                <button class="btn-orange">
+                    <i class="icon-refresh" href="#"></i>
                 </button>
             </div>
-
-
             <div class="statistic-table">
-                <div class="row">
-                    <table class="statistic-field">
-                        <tr>
-                            <th>Visit Sinnups</th>
-                            <td>124</td>
-                          </tr>
-                          <tr>
-                            <th>FTD</th>
-                            <td>445</td>
-                          </tr>
-                          <tr>
-                            <th>Net deposit</th>
-                            <td>564</td>
-                          </tr>
-                          <tr>
-                            <th>Turn over</th>
-                            <td>432</td>
-                          </tr>
-                    </table>
+                <div class="statistic-field">
+                    <p>Visit Sinnups</p>
+                    <p2>124</p2>
                 </div>
-                
-
+                <div class="statistic-field">
+                    <p>FTD</p>
+                    <p2>445</p2>
+                </div>
+                <div class="statistic-field">
+                    <p>Net deposit</p>
+                    <p2>564</p2>
+                </div>
+                <div class="statistic-field">
+                    <p>Turn over</p>
+                    <p2>432</p2>
+                </div>
+            </div>
+            <div class="chart">
+                <canvas id="myChart"></canvas>
+            </div>
         </section>
-        
-        <section class="main links">
+        <section class="main-links">
             <h3>LINKS</h3>
             <div class="links-button">
-                <a href="#" class="btn-orange button-add">+ add new</a>
+                <button class="btn-orange" href="#" >+ add new</button>
             </div>
-            <div class="component-links">
-                <table class="links-table">
-                    <tr>
-                      <th class="links-title">Home page</td>
-                      <td><a href="#">https://homepage.com</a></td>
-                      <td><img class="menu-icon links-icon" src="images/icons/links.svg" alt=""></td>
-                      <td><img class="menu-icon" src="images/icons/trash.svg" alt=""></td>
-                    </tr>
-                    <tr>
-                      <th class="links-title">Currently offer</td>
-                      <td><a href="#">https://currently.com</a></td>
-                      <td><img class="menu-icon links-icon" src="images/icons/links.svg" alt=""></td>
-                      <td><img class="menu-icon" src="images/icons/trash.svg" alt=""></td>
-                    </tr>
-                    <tr>
-                      <th class="links-title">Blurix</td>
-                      <td><a href="#">https://blurpix.com</a></td>
-                      <td><img class="menu-icon links-icon" src="images/icons/links.svg" alt=""></td>
-                      <td><img class="menu-icon" src="images/icons/trash.svg" alt=""></td>
-                    </tr>
-                    <tr>
-                      <th class="links-title">Google</td>
-                      <td><a href="#">https://google.com</a></td>
-                      <td><img class="menu-icon links-icon" src="images/icons/links.svg" alt=""></td>
-                      <td><img class="menu-icon" src="images/icons/trash.svg" alt=""></td>
-                    </tr>
-                    <tr>
-                      <th class="links-title">Facebook</td>
-                      <td><a href="#">https://facebook.com</a></td>
-                      <td><img class="menu-icon links-icon" src="images/icons/links.svg" alt=""></td>
-                      <td><img class="menu-icon" src="images/icons/trash.svg" alt=""></td>
-                    </tr>
-                    <tr>
-                      <th class="links-title">Dashboard</td>
-                      <td><a href="#">https://dashboard.com</a></td>
-                      <td><img class="menu-icon links-icon" src="images/icons/links.svg" alt=""></td>
-                      <td><img class="menu-icon" src="images/icons/trash.svg" alt=""></td>
-                    </tr>
-                    <tr>
-                      <th class="links-title">Blurax</td>
-                      <td><a href="#">https://blurax.com</a></td>
-                      <td><img class="menu-icon links-icon" src="images/icons/links.svg" alt=""></td>
-                      <td><img class="menu-icon" src="images/icons/trash.svg" alt=""></td>
-                    </tr>
-                    <tr>
-                      <th class="links-title">Piece of Wine</td>
-                      <td><a href="#">https://piecesofwine.com</a></td>
-                      <td><img class="menu-icon links-icon" src="images/icons/links.svg" alt=""></td>
-                      <td><img class="menu-icon" src="images/icons/trash.svg" alt=""></td>
-                    </tr>
-                    <tr>
-                      <th class="links-title">Twitter</td>
-                      <td><a href="#">https://twitter.com</a></td>
-                      <td><img class="menu-icon links-icon" src="images/icons/links.svg" alt=""></td>
-                      <td><img class="menu-icon" src="images/icons/trash.svg" alt=""></td>
-                    </tr>
-                </table>
+            <div class="list-links">
+                <div class="position-link-list">
+                    <div class="links-title">
+                        <p>Home page</p>
+                    </div>
+                    <div class="links">
+                        <a href="#">https://homepage.com</a>
+                    </div>
+                    <div class="links-icons">
+                        <i class="icon-links"></i>
+                        <i class="icon-trash"></i>
+                    </div>
+                </div>
+                <div class="position-link-list">
+                    <div class="links-title">
+                        <p>Currently offer</p>
+                    </div>
+                    <div class="links">
+                        <a href="#">https://currently.com</a>
+                    </div>
+                    <div class="links-icons">
+                        <i class="icon-links"></i>
+                        <i class="icon-trash"></i>
+                    </div>
+                </div>
+                <div class="position-link-list">
+                    <div class="links-title">
+                        <p>Blurix</p>
+                    </div>
+                    <div class="links">
+                        <a href="#">https://blurpix.com</a>
+                    </div>
+                    <div class="links-icons">
+                        <i class="icon-links"></i>
+                        <i class="icon-trash"></i>
+                    </div>
+                </div>
+                <div class="position-link-list">
+                    <div class="links-title">
+                        <p>Google</p>
+                    </div>
+                    <div class="links">
+                        <a href="#">https://google.com</a>
+                    </div>
+                    <div class="links-icons">
+                        <i class="icon-links"></i>
+                        <i class="icon-trash"></i>
+                    </div>
+                </div>
+                <div class="position-link-list">
+                    <div class="links-title">
+                        <p>Facebook</p>
+                    </div>
+                    <div class="links">
+                        <a href="#">https://facebook.com</a>
+                    </div>
+                    <div class="links-icons">
+                        <i class="icon-links"></i>
+                        <i class="icon-trash"></i>
+                    </div>
+                </div>
+                <div class="position-link-list">
+                    <div class="links-title">
+                        <p>Dashboard</p>
+                    </div>
+                    <div class="links">
+                        <a href="#">https://dashboard.com</a>
+                    </div>
+                    <div class="links-icons">
+                        <i class="icon-links"></i>
+                        <i class="icon-trash"></i>
+                    </div>
+                </div>
+                <div class="position-link-list">
+                    <div class="links-title">
+                        <p>Blurax</p>
+                    </div>
+                    <div class="links">
+                        <a href="#">https://blurax.com</a>
+                    </div>
+                    <div class="links-icons">
+                        <i class="icon-links"></i>
+                        <i class="icon-trash"></i>
+                    </div>
+                </div>
+                <div class="position-link-list">
+                    <div class="links-title">
+                        <p>Piece of Wine</p>
+                    </div>
+                    <div class="links">
+                        <a href="#">https://piecesofwine.com</a>
+                    </div>
+                    <div class="links-icons">
+                        <i class="icon-links"></i>
+                        <i class="icon-trash"></i>
+                    </div>
+                </div>
+                <div class="position-link-list">
+                    <div class="links-title">
+                        <p>Twitter</p>
+                    </div>
+                    <div class="links">
+                        <a href="#">https://twitter.com</a>
+                    </div>
+                    <div class="links-icons">
+                        <i class="icon-links"></i>
+                        <i class="icon-trash"></i>
+                    </div>
+                </div>
             </div>
             <div class="links-button">
-                <a href="#" class="btn-orange button-add">+ add new</a>
+                <button class="btn-orange" href="#" >+ add new</button>
             </div>
         </section>
 
     </main>
-    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
