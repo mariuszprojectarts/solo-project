@@ -944,37 +944,47 @@ h1 {
     width: 64px;
     height: 64px;
     padding-top: 0;
+    background: none;
   }
-  .navigation.show.list .hide,
-  .navigation.show .contacts .hide {
+  .navigation.show .list.hide,
+  .navigation.show .contacts.hide {
     display: none;
   }
   .heading h1 {
     display: none;
+    margin-left: 0;
   }
-  .navigation .heading .hamburger-icon {
+  .navigation.heading.hamburger-icon {
     margin-left: 23px;
-    margin-top: 17px;
+    margin-top: 20px;
+  }
+  .administration-panel {
+    margin-left: 250px;
   }
 }
 
 @media (max-width: 767px) {
-  .navigation .show {
+  .navigation.show {
     overflow: hidden;
     width: 64px;
     height: 64px;
     padding-top: 0;
+    margin: 0;
+    background: none;
   }
-  .navigation .show.list .hide,
-  .navigation .show .contacts .hide {
+  .navigation.show .list.hide,
+  .navigation.show .contacts.hide {
     display: none;
+  }
+  .heading {
+    margin-left: 0;
   }
   .heading h1 {
     display: none;
   }
   .navigation .heading .hamburger-icon {
     margin-left: 23px;
-    margin-top: 17px;
+    margin-top: 20px;
   }
 }
 
@@ -1060,6 +1070,18 @@ header {
   height: 200px;
 }
 
+.dates .btn-orange {
+  margin-left: 5px;
+}
+
+.dates input {
+  margin: 0 5px;
+}
+
+.dates i {
+  margin-left: 5px;
+}
+
 .statistic-table {
   -ms-flex-pack: center;
       justify-content: center;
@@ -1101,6 +1123,7 @@ header {
   -ms-flex-pack: justify;
       justify-content: space-between;
   max-width: 400px;
+  height: 40px;
 }
 
 .position-link-list div {
@@ -1123,11 +1146,63 @@ header {
   line-height: 2.5;
 }
 
+.links {
+  width: 500px;
+}
+
+.links a {
+  line-height: 2.5;
+  text-decoration: none;
+}
+
 .links-icons {
   opacity: 0;
+  width: 200px;
+}
+
+.links-icons i {
+  line-height: 2.5;
+  cursor: pointer;
 }
 
 .links-icons:hover {
   opacity: 1;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  main {
+    width: 960px;
+  }
+  .main-general {
+    height: 790px;
+  }
+  .chart {
+    width: 500px;
+  }
+  .administration-panel {
+    margin-left: 250px;
+  }
+  .administration-panel i {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  main {
+    width: 960px;
+    height: 800px;
+  }
+  main .main-general {
+    height: 790px;
+  }
+  main .main-general .chart {
+    width: 500px;
+  }
+  .administration-panel {
+    margin-left: 250px;
+  }
+  .administration-panel i {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

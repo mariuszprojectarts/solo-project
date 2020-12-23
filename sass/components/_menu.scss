@@ -86,42 +86,56 @@ h1 {
         width: 64px;
         height: 64px;
         padding-top: 0;
+        background: none;
 
-        &.list .hide,
-        .contacts .hide {
+        .list.hide,
+        .contacts.hide {
             display: none;
         }
     }
 
     .heading h1 {
         display: none;
+        margin-left: 0;
     }
 
-    .navigation .heading .hamburger-icon {
+    .navigation.heading.hamburger-icon {
         margin-left: 23px;
-        margin-top: 17px;
+        margin-top: 20px;
     }
+
+    .administration-panel {
+        margin-left: 250px;
+    }
+
 }
 
 @media(max-width: 767px) {
-    .navigation .show {
+    .navigation.show {
         overflow: hidden;
         width: 64px;
         height: 64px;
         padding-top: 0;
+        margin: 0;
+        background: none;
 
-        &.list .hide,
-        .contacts .hide {
+        .list.hide,
+        .contacts.hide {
             display: none;
         }
     }
 
-    .heading h1 {
-        display: none;
+
+    .heading {
+        margin-left: 0;
+
+        h1 {
+            display: none;
+        }
     }
 
     .navigation .heading .hamburger-icon {
         margin-left: 23px;
-        margin-top: 17px;
+        margin-top: 20px;
     }
 }

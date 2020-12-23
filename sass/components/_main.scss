@@ -79,7 +79,20 @@ header {
     margin: auto;
     width: 100%;
     height: 200px;
+
+    .btn-orange {
+        margin-left: 5px;
+    }
+
+    input {
+        margin: 0 5px;
+    }
+
+    i {
+        margin-left: 5px;
+    }
 }
+
 
 .statistic-table {
     justify-content: center;
@@ -124,6 +137,7 @@ header {
     margin: 0 auto;
     justify-content: space-between;
     max-width: 400px;
+    height: 40px;
 }
 
 .position-link-list div {
@@ -143,10 +157,82 @@ header {
     line-height: 2.5;
 }
 
+.links {
+    width: 500px;
+}
+
+.links a {
+    line-height: 2.5;
+    text-decoration: none;
+    //text-align: left;
+}
+
+
 .links-icons {
     opacity: 0;
+    width: 200px;
 }
+
+.links-icons i {
+    line-height: 2.5;
+    cursor: pointer;
+}
+
 
 .links-icons:hover {
     opacity: 1;
+}
+
+
+//MEDIA
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    main {
+        width: 960px;
+    }
+
+    .main-general {
+        height: 790px;
+    }
+
+    .chart {
+        width: 500px;
+    }
+
+    .administration-panel {
+        margin-left: 250px;
+
+        i {
+            font-size: 20px;
+        }
+    }
+
+
+}
+
+
+@media(max-width: 767px) {
+    main {
+        width: 960px;
+        height: 800px;
+
+        .main-general {
+            height: 790px;
+
+            .chart {
+                width: 500px;
+            }
+        }
+    }
+
+    .administration-panel {
+        margin-left: 250px;
+
+        i {
+            font-size: 20px;
+        }
+    }
+
+
+
 }
